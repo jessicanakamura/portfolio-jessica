@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Permite que o site se adapte a celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio Pessoal</title>
+
+    <!-- Importa o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu de navegação principal -->
+    <nav>
+
+        <!-- Nome exibido como logo -->
+        <h1 class="logo">Jessica Nakamura Mendes</h1>
+
+        <!-- Links que direcionam para cada seção do site -->
+        <div>
+            <a href="#sobre">Sobre</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h2>Sobre mim</h2>
+
+        <p>
+            Meu nome é Jessica Nakamura Mendes, tenho 26 anos e resido em João Monlevade - MG. 
+            Atualmente atuo na área de siderurgia, com experiência em controle de qualidade de produtos e processos industriais.
+        </p>
+
+        <p>
+            Ao longo da minha trajetória profissional, desenvolvi habilidades analíticas, atenção aos detalhes e disciplina em ambientes industriais exigentes. 
+            Nos últimos anos, venho despertando um grande interesse pela área de tecnologia, principalmente no desenvolvimento de sistemas e análise de dados.
+        </p>
+
+        <p>
+            Atualmente estou em processo de transição de carreira para a área de tecnologia, buscando constantemente aprender e evoluir em programação.
+        </p>
+
+        <p>
+            No meu tempo livre, gosto de praticar atividades físicas, especialmente academia, pois valorizo saúde e disciplina no dia a dia. 
+            Também gosto de assistir séries, passar tempo com minha família e sair para momentos de lazer.
+        </p>
+
+        <p>
+            Além disso, tenho grande interesse em aprender coisas novas, principalmente relacionadas à área de tecnologia, o que tem motivado ainda mais minha transição de carreira.
+        </p>
+    </section>
+
+    <!-- Seção Formação -->
+    <section id="formacao">
+        <h2>Formação</h2>
+
+        <!-- Lista de formações acadêmicas -->
+        <ul>
+            <li>Tecnólogo em Análise e Desenvolvimento de Sistemas - Centro Universitário Internacional</li>
+            <li>Técnico em Segurança do Trabalho - SENAI</li>
+        </ul>
+
+        <!-- Subtítulo para cursos adicionais -->
+        <p class="subtitulo">Cursos Complementares</p>
+
+        <!-- Lista de cursos complementares -->
+        <ul>
+            <li>Processos Siderúrgicos</li>
+            <li>Manutenção Mecânica</li>
+        </ul>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+
+        <!-- Lista de projetos e estudos -->
+        <ul>
+            <li>Desenvolvimento de páginas web utilizando HTML, CSS e JavaScript</li>
+            <li>Projetos acadêmicos voltados para lógica de programação</li>
+            <li>Estudos em análise de dados com Power BI</li>
+            <li>Este portfólio como projeto prático de desenvolvimento web</li>
+        </ul>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+
+        <!-- Informações de contato -->
+        <p>Email: jessicanakamuram@gmail.com</p>
+
+        <p>
+            LinkedIn:
+            <!-- Link externo abrindo em nova aba -->
+            <a href="https://linkedin.com/in/jessicanakamuram/" target="_blank" rel="noopener noreferrer">
+                Acessar perfil
+            </a>
+        </p>
+
+        <!-- Formulário de contato -->
+        <form id="formulario">
+            <input type="text" id="nome" placeholder="Seu nome">
+            <input type="email" id="email" placeholder="Seu email">
+            <textarea id="mensagem" placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Mensagem exibida após validação do formulário -->
+        <p id="mensagem-sucesso"></p>
+    </section>
+
+    <!-- Importa o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

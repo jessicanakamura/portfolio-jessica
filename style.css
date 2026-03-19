@@ -1,0 +1,126 @@
+/* Reset básico: remove margens e define padrão geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo geral da página */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #1e1e2f;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nome/logo no topo */
+.logo {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Links do menu */
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Efeito ao passar o mouse e link ativo */
+nav a:hover,
+.ativo {
+    color: #00bcd4;
+}
+
+/* Seções do site */
+section {
+    padding: 50px 40px;
+    max-width: 900px;
+    margin: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Remove a linha da última seção */
+section:last-child {
+    border-bottom: none;
+}
+
+/* Títulos das seções */
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #1e1e2f;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 15px;
+}
+
+/* Listas */
+ul {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+/* Itens da lista */
+li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Subtítulo (Cursos Complementares) */
+.subtitulo {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #1e1e2f;
+    font-weight: 500;
+}
+
+/* Formulário */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Campos do formulário */
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Botão */
+button {
+    padding: 10px;
+    background-color: #1e1e2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    background-color: #00bcd4;
+}
+
+/* Mensagem exibida após envio do formulário */
+#mensagem-sucesso {
+    margin-top: 10px;
+    font-weight: bold;
+}
