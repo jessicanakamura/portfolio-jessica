@@ -37,6 +37,9 @@ form.addEventListener('submit', function(e) {
     const email = document.getElementById('email').value;
     const texto = document.getElementById('mensagem').value;
 
+    // Expressão para validar e-mail
+    const emailValido = /\S+@\S+\.\S+/;
+
     // Verifica se algum campo está vazio
     if (nome === '' || email === '' || texto === '') {
         mensagem.style.color = 'red';
@@ -44,7 +47,14 @@ form.addEventListener('submit', function(e) {
         return;
     }
 
-    // Se estiver tudo preenchido, mostra mensagem de sucesso
+    // Validação de formato do e-mail
+    if (!emailValido.test(email)) {
+        mensagem.style.color = 'red';
+        mensagem.textContent = 'Digite um email válido!';
+        return;
+    }
+
+    // Se estiver tudo preenchido corretamente
     mensagem.style.color = 'green';
     mensagem.textContent = 'Mensagem enviada com sucesso!';
 
